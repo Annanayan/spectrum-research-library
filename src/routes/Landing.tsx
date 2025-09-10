@@ -77,7 +77,7 @@ export default function Landing() {
             </div>
           </div>
           <div className="flex">
-            <img src="/assets/Support & Lifelines.png" alt="Support & Lifelines" className="portrait rounded-2xl" />
+            <img src="/assets/Support & Lifelines.png" alt="Support & Lifelines" className="h-[350px] w-full object-cover rounded-2xl" />
           </div>
         </div>
       </section>
