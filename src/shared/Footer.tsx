@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="mt-16 border-t border-gray-200 pt-16">
+    <footer className="mt-16 border-t border-gray-200 pt-12">
       {/* 上半：三列布局 */}
       <div className="container-xxl pt-16 pb-24">
         <div className="grid gap-10 md:grid-cols-3">
@@ -45,7 +45,7 @@ export default function Footer() {
         </div>
 
         {/* 下半：居中灰色版权 */}
-        <div className="mt-10 text-center pb-20">
+        <div className="mt-10 text-center pb-12">
           <p className="footer-small text-gray-500 mb-18">© 2025 Spectrum Research Library. All rights reserved.</p>
         </div>
       </div>
