@@ -23,10 +23,10 @@ body { @apply font-body text-sr-text bg-sr-bg; }
 /* Header & Footer fine-tuning */
 .hdr-min { font-size: 18px; line-height: 1.2; } /* smaller than any body copy */
 .hdr-pad { padding-top: 32px; padding-bottom: 48px; } /* roomy spacing */
-.footer-small { font-size: 18px; line-height: 1.5; }
+.footer-small { font-size: 16px; line-height: 1.5; }
 .footer-pink { color: #D498E1; }
 .footer-gray { color: #6b7280; }
-.icon-gray svg { width: 22px; height: 22px; display: block; color: #9ca3af; }
+.icon-gray svg { width: 18px; height: 18px; display: block; color: #9ca3af; }
 .footer-icons a, .footer-icons span { display: inline-flex; }
 .footer-icons a:hover { opacity: .85; }
 
