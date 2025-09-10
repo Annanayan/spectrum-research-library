@@ -2,7 +2,7 @@ export default function Footer() {
   return (
     <footer className="mt-16 border-t border-gray-200">
       {/* 上半：三列布局 */}
-      <div className="container-xxl py-10">
+      <div className="container-xxl pt-16 pb-24">
         <div className="grid gap-10 md:grid-cols-3">
           {/* 左列：图标 + 联系方式（粉色），均不加粗 */}
           <div className="space-y-6">
