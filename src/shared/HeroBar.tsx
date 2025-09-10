@@ -10,8 +10,8 @@ export default function HeroBar({ src, alt, children }: { src: string; alt: stri
 
         {children ? (
           <div className="absolute inset-0">
-            <div className="container-xxl h-full flex items-center justify-start">
-              <div className="max-w-[560px] p-6 bg-transparent">
+            <div className="container-xxl h-full flex items-center">
+              <div className="p-6 bg-transparent">
                 {children}
               </div>
             </div>
