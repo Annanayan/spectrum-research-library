@@ -27,7 +27,7 @@ export default function Challenges() {
         </div>
       </HeroBar>
 
-      <section className="container-xxl pt-10 pb-16">
+      <section className="container-xxl pt-10 pb-16 min-h-[50vh]">
         <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight">{current.title}</h1>
         <div className="mt-8 space-y-10">
           {current.sections.map((s, idx) => (
