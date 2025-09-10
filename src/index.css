@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { --container: 1200px; }
+.container-xxl { max-width: var(--container); margin: 0 auto; padding: 0 1rem; }
+
+body { @apply font-body text-sr-text bg-sr-bg; }
+
+.btn { @apply inline-flex items-center justify-center px-6 py-3 rounded-2xl font-semibold transition; }
+.btn-black { @apply bg-sr-button text-white hover:opacity-90; }
+.btn-gray { @apply bg-sr-graybtn text-sr-text hover:bg-gray-300; }
+
+.h1-hero { @apply font-extrabold; font-size: clamp(42px, 6vw, 64px); line-height: 1.1; letter-spacing: -0.02em; }
+.p-hero { @apply text-lg text-sr-muted; max-width: 60ch; }
+
+.h2-section { @apply font-bold; font-size: clamp(28px, 4vw, 40px); line-height: 1.2; letter-spacing: -0.01em; }
+.h3-sub { @apply font-semibold text-xl; }
+.lead-muted { @apply text-sr-muted; }
+
+.img-flat { @apply w-full rounded-2xl object-cover; }
+
+/* Header & Footer fine-tuning */
+.hdr-min { font-size: 18px; line-height: 1.2; } /* smaller than any body copy */
+.hdr-pad { padding-top: 32px; padding-bottom: 48px; } /* roomy spacing */
+.footer-small { font-size: 18px; line-height: 1.5; }
+.footer-pink { color: #D498E1; }
+.footer-gray { color: #6b7280; }
+.icon-gray svg { width: 22px; height: 22px; display: block; color: #9ca3af; }
+.footer-icons a, .footer-icons span { display: inline-flex; }
+.footer-icons a:hover { opacity: .85; }
+
+/* Global section gaps and helpers */
+.section-gap { margin-top: 64px; }
+.portrait { aspect-ratio: 3 / 4; object-fit: cover; width: 100%; }
