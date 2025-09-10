@@ -46,7 +46,7 @@ export default function Footer() {
 
         {/* 下半：居中灰色版权 */}
         <div className="mt-10 text-center">
-          <p className="footer-small text-gray-500">© 2025 Spectrum Research Library. All rights reserved.</p>
+          <p className="footer-small text-gray-500 mb-18">© 2025 Spectrum Research Library. All rights reserved.</p>
         </div>
       </div>
     </footer>
