@@ -11,7 +11,7 @@ export default function Challenges() {
       <HeroBar src={current.heroImage} alt={current.title}>
         <div className="h-full w-full flex items-center">
           <div className="container-xxl">
-            <div className="max-w-[540px] pl-6 border-l-4 border-white/70 py-6 text-white/90">
+            <div className="border-l-4 border-white/70 py-6 text-white/90">
               {challengeNav.map(item => {
                 const active = item.slug === current.slug
                 return (
