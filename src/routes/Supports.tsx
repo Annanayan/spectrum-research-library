@@ -6,7 +6,8 @@ export default function Supports() {
       <HeroBar src="/assets/Support & Lifelines Header.png" alt="Support & Lifelines" />
       <section className="container-xxl pt-10 pb-16">
         <h1 className="text-3xl md:text-4xl font-semibold tracking-tight">Support & Lifelines</h1>
-        <p className="mt-3 text-sr-muted">Content coming soon.</p>
+        <h2 className="h2">Overview</h2>
+        <p className="p text-gray-600">Content coming soon.</p>
       </section>
     </div>
   )
