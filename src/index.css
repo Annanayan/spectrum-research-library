@@ -33,3 +33,10 @@ body { @apply font-body text-sr-text bg-sr-bg; }
 /* Global section gaps and helpers */
 .section-gap { margin-top: 64px; }
 .portrait { aspect-ratio: 3 / 4; object-fit: cover; width: 100%; }
+
+/* 强制把 HeroBar 里的任何背景都去掉 */
+.hero-no-tint, .hero-no-tint * {
+  background: transparent !important;
+  backdrop-filter: none !important;
+}
+
