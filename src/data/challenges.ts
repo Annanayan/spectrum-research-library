@@ -12,7 +12,7 @@ export type Challenge = {
   slug: string;
   title: string;
   heroImage: string; // 1440x252 header banner
-  sections: { heading: string; body: string | string[] }[];
+  sections: { heading: string; body: (string |  ContentBlock)[] }[];
 };
 
 export const challenges: Challenge[] = [
@@ -187,11 +187,10 @@ export const challenges: Challenge[] = [
       }
     ]
   },
-  
-  { 
-    slug: "family-cultural-and-religious-conflicts", 
-    title: "Family, Cultural, and Religious Conflicts", 
-    heroImage: "/assets/Family, Cultural, and Religious Conflicts Header.png", 
+  {
+    slug: "loss-of-peer-support",
+    title: "Loss of Peer Support",
+    heroImage: "/assets/Loss of Peer Support Header.png",
     sections: [
       {
         heading: "1 Introduction", 
@@ -226,8 +225,90 @@ export const challenges: Challenge[] = [
           { type: 'paragraph', content:''}
         ]
       }
-    }
-  ];
+    ]
+  },
+  {
+    slug: "family-cultural-and-religious-conflicts",
+    title: "Family, Cultural, and Religious Conflicts",
+    heroImage: "/assets/Family, Cultural, and Religious Conflicts Header.png",
+    sections: [
+      {
+        heading: "1 Introduction", 
+        body: [
+          { type: 'paragraph', content: ''}
+        ]
+      }, 
+      {
+        heading: "2 Understanding",
+        body: [
+          { type: 'paragraph', content: ''}
+        ]
+      },
+
+      {
+        heading: "3 Strategies and Methods",
+        body: [
+          { type: 'paragraph', content: ''}
+        ]
+      },
+  
+      {
+        heading: "4 Case Example",
+        body: [
+          { type: 'paragraph', content: ''},
+          { type: 'paragraph', content: ''}
+        ]
+      },
+      {
+        heading: "5 Summary",
+        body: [
+          { type: 'paragraph', content:''}
+        ]
+      }
+    ]
+  },
+
+  { 
+    slug: "chronic-minority-stress", 
+    title: "Chronic Minority Stress", 
+    heroImage: "/assets/Chronic Minority Stress Header.png", 
+    sections: [
+      {
+        heading: "1 Introduction", 
+        body: [
+          { type: 'paragraph', content: ''}
+        ]
+      }, 
+      {
+        heading: "2 Understanding",
+        body: [
+          { type: 'paragraph', content: ''}
+        ]
+      },
+
+      {
+        heading: "3 Strategies and Methods",
+        body: [
+          { type: 'paragraph', content: ''}
+        ]
+      },
+  
+      {
+        heading: "4 Case Example",
+        body: [
+          { type: 'paragraph', content: ''},
+          { type: 'paragraph', content: ''}
+        ]
+      },
+      {
+        heading: "5 Summary",
+        body: [
+          { type: 'paragraph', content:''}
+        ]
+      }
+    ]
+  }
+];
 
 export const challengeNav = [
   { slug: "coming-out-anxiety", label: "Coming Out Anxiety" },
