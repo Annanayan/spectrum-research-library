@@ -1,4 +1,5 @@
 import { GrayButton, BlackButton } from '@/components/Buttons'
+import OptimizedImage from '@/components/OptimizedImage'
 
 export default function Landing() {
   return (
@@ -17,7 +18,7 @@ export default function Landing() {
 
       {/* HERO IMAGE (own row with extra breathing room) */}
       <section className="container-xxl mt-24">
-        <img src="/assets/Home Hero.png" alt="Home hero" className="img-flat" style={{ aspectRatio: '1285 / 702' }} />
+        <OptimizedImage src="/assets/Home Hero.png" alt="Home hero" className="img-flat" style={{ aspectRatio: '1285 / 702' }} priority={true} placeholder="blur" />
       </section>
 
       {/* JOURNEYS & CHALLENGES */}
@@ -26,7 +27,7 @@ export default function Landing() {
 
         <div className="grid md:grid-cols-2 gap-10 mt-6">
           <div>
-            <img src="/assets/Identity and Self-Acceptance Challenges.png" alt="Identity and Self-Acceptance Challenges" className="img-flat" style={{ aspectRatio: '16 / 10' }} />
+            <OptimizedImage src="/assets/Identity and Self-Acceptance Challenges.png" alt="Identity and Self-Acceptance Challenges" className="img-flat" style={{ aspectRatio: '16 / 10' }} priority={true} placeholder="skeleton" />
             <h3 className="h3-sub mt-6">Identity and Self-Acceptance Challenges</h3>
             <p className="lead-muted mt-2">
               Struggling with negative messages about one’s identity that have been absorbed from society.
@@ -36,7 +37,7 @@ export default function Landing() {
             </div>
           </div>
           <div>
-            <img src="/assets/Social Isolation and Community Disconnection.png" alt="Social Isolation and Community Disconnection" className="img-flat" style={{ aspectRatio: '16 / 10' }} />
+            <OptimizedImage src="/assets/Social Isolation and Community Disconnection.png" alt="Social Isolation and Community Disconnection" className="img-flat" style={{ aspectRatio: '16 / 10' }} priority={true} placeholder="skeleton" />
             <h3 className="h3-sub mt-6">Social Isolation and Community Disconnection</h3>
             <p className="lead-muted mt-2">
               The internal and external struggles LGBTQ+ individuals face when their sexual or gender identities are
@@ -77,7 +78,7 @@ export default function Landing() {
             </div>
           </div>
           <div className="flex">
-            <img src="/assets/Support & Lifelines.png" alt="Support & Lifelines" className="h-[350px] w-full object-cover rounded-2xl" />
+            <OptimizedImage src="/assets/Support & Lifelines.png" alt="Support & Lifelines" className="h-[350px] w-full object-cover rounded-2xl" priority={true} placeholder="skeleton" />
           </div>
         </div>
       </section>
