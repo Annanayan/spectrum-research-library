@@ -3,6 +3,53 @@ import { useState } from 'react'
 import { challenges, challengeNav } from '@/data/challenges'
 import HeroBar from '@/shared/HeroBar'
 
+
+function renderBodyItem(item: any, i: number) {
+  // 1) 纯字符串：按编号自动判断层级
+  if (typeof item === 'string') {
+    if (/^\d+\.\d+\.\d+/.test(item)) {
+      return <h4 key={`h4-${i}`} className="article-h2">{item}</h4>;
+    }
+    if (/^\d+\.\d+/.test(item)) {
+      return <h3 key={`h3-${i}`} className="article-h2">{item}</h3>;
+    }
+    if (/^\d+/.test(item)) {
+      return <h2 key={`h2-${i}`} className="article-h1">{item}</h2>;
+    }
+    return <p key={`p-${i}`} className="text-gray-700 leading-8">{item}</p>;
+  }
+
+  // 2) 对象：按 type 渲染
+  if (item && typeof item === 'object' && 'type' in item) {
+    if (item.type === 'paragraph') {
+      return <p key={`p-${i}`} className="text-gray-700 leading-8">{item.content}</p>;
+    }
+    if (item.type === 'bullet') {
+      // 支持缩进级别：level = 1,2,3...
+      const pad = item.level ? item.level * 16 : 16;
+      return (
+        <div key={`b-${i}`} style={{ paddingLeft: pad }}>
+          <div className="flex gap-2">
+            <span>•</span>
+            <span className="text-gray-700 leading-8">{item.content}</span>
+          </div>
+        </div>
+      );
+    }
+    if (item.type === 'quote') {
+      return (
+        <blockquote key={`q-${i}`} className="border-l-4 border-gray-300 pl-4 italic text-gray-600">
+          <p>{item.content}</p>
+          {item.cite ? <cite className="not-italic text-gray-500 block mt-2">— {item.cite}</cite> : null}
+        </blockquote>
+      );
+    }
+  }
+
+  console.warn('Unknown body item:', item);
+  return null;
+}
+
 export default function Challenges() {
   const { slug } = useParams()
   const current = challenges.find(c => c.slug === slug) || challenges[0]
@@ -65,19 +112,18 @@ export default function Challenges() {
           {current.sections.map((s, idx) => (
             <div key={idx} className="max-w-4xl">
               <h2 className="article-h1">{s.heading}</h2>
+  
               {Array.isArray(s.body) ? (
                 <div className="article-content space-y-4">
-                  {s.body.map((p, i) => {
-                    // 检查是否是子标题（以数字开头， "2.1"）
-                    if (/^\d+\.\d+/.test(p)) {
-                      return <h3 key={i} className="article-h2">{p}</h3>
-                    }
-                    return <p key={i}>{p}</p>
-                  })}
+                  {s.body.map((item, i) => renderBodyItem(item, i))}
                 </div>
               ) : (
-                <p className="article-content">{s.body}</p>
+                // 非数组时谨慎渲染
+                typeof s.body === 'string'
+                  ? <p className="article-content">{s.body}</p>
+                  : null
               )}
+
             </div>
           ))}
         </div>
