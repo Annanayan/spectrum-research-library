@@ -114,3 +114,27 @@ body { @apply font-body text-sr-text bg-sr-bg; }
 .share-btn:hover {
   background: #cecefb;
 }
+
+/* 优化图片渲染性能 */
+img {
+  content-visibility: auto;
+  contain-intrinsic-size: 512px;
+}
+
+/* 为懒加载图片添加占位符样式 */
+.img-loading {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* 优化大图片的渲染 */
+.img-container {
+  will-change: transform;
+  transform: translateZ(0);
+}
