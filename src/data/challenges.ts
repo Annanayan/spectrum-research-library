@@ -1,4 +1,13 @@
 import { useState } from 'react'
+
+export type ContentBlock = {
+  type: 'paragraph' | 'bullet' | 'quote';
+  content: string;
+  level?: number;
+  cite?: string;
+};
+
+
 export type Challenge = {
   slug: string;
   title: string;
