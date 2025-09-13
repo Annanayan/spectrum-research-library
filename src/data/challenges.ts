@@ -216,8 +216,8 @@ export const challenges: Challenge[] = [
           { type: 'paragraph', content:''}
         ]
       }
-    ]
-  },
+    }
+  ];
 
 export const challengeNav = [
   { slug: "coming-out-anxiety", label: "Coming Out Anxiety" },
