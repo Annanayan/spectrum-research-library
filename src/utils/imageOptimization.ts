@@ -28,6 +28,7 @@ export function getOptimizedImageUrl(
   return src
 }
 
+
 // 检测 WebP 支持
 export function supportsWebP(): Promise<boolean> {
   return new Promise((resolve) => {
