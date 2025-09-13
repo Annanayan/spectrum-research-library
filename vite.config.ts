@@ -18,12 +18,12 @@ export default defineConfig({
       },
     },
     // 压缩
-    minify: 'terser',
+    minify: 'terser'as const,
     terserOptions: {
       compress: {
         drop_console: true,
         drop_debugger: true,
       },
     },
-  },
+  }
 })
