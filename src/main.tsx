@@ -16,7 +16,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
 // 预加载首屏关键图片
 preloadImages([
   '/assets/Home Hero.png',
-  '/assets/Coming Out Anxiety Header.png', // 如果这是默认打开的页面
+  '/assets/Coming Out Anxiety Header.png',  
   '/assets/Support & Lifelines Header.png',
   '/assets/Books & Journals Header.png'
 ])
