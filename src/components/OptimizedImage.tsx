@@ -1,4 +1,5 @@
 // src/components/OptimizedImage.tsx
+
 import { useState, useEffect, useRef } from 'react'
 
 interface OptimizedImageProps {
