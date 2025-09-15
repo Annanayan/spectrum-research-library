@@ -17,7 +17,7 @@ export default function Landing() {
       </section>
 
       {/* HERO IMAGE (own row with extra breathing room) */}
-      <section className="container-xxl mt-24">
+      <section className="container-xxl section-gap-sm">
         <OptimizedImage src="/assets/Home Hero.png" alt="Home hero" className="img-flat" style={{ aspectRatio: '1285 / 702' }} priority={true} placeholder="blur" />
       </section>
 
