@@ -70,18 +70,18 @@ export const challenges: Challenge[] = [
           "3.5 Prioritize Self-Care",
           { type: 'paragraph', content: 'Taking care of your emotional and physical well-being is essential as you navigate this process.' },
           { type: 'bullet', content: ' Establish Relaxation Practices: Incorporate techniques such as mindfulness, meditation, or journaling to help manage stress.', level: 1 },
-          { type: 'bullet', content: 'Deep Breathing Exercises: Try the 4-7-8 breathing technique:', level: 2 },
+          { type: 'bullet', content: 'Deep Breathing Exercises: Try the 4-7-8 breathing technique:', level: 3 },
           { type: 'bullet', content: 'Sit comfortably and close your eyes.', level: 3 },
           { type: 'bullet', content: 'Inhale slowly through your nose for 4 seconds.', level: 3 },
           { type: 'bullet', content: 'Hold your breath for 7 seconds.', level: 3 },
           { type: 'bullet', content: 'Exhale slowly through your mouth for 8 seconds.', level: 3 },
           { type: 'bullet', content: 'Repeat this cycle 4–6 times. This practice helps calm your mind and reduces stress.', level: 3 },
-          { type: 'bullet', content: `Guided Meditation: Use free apps or online videos (like <a href="https://www.headspace.com/?gad_source=1&gbraid=0AAAAADLlnJ2iu6e3nxuh_CZcemUryTmAg&gclid=Cj0KCQjw2tHABhCiARIsANZzDWqU9BfCY90GXOfW3PyiW0JHFSGUi5rA2R-1iyC91kFd8QcKxJlnGMgaAmw6EALw_wcB"> Headspace </a> or <a href="https://insighttimer.com/"> Insight Timer </a>) that offer guided meditations specifically for stress relief and emotional balance. Even a short 10-minute session a day can help you become more centered and aware of your emotions. `, level: 2 },
+          { type: 'bullet', content: `Guided Meditation: Use free apps or online videos (like <a href="https://www.headspace.com/?gad_source=1&gbraid=0AAAAADLlnJ2iu6e3nxuh_CZcemUryTmAg&gclid=Cj0KCQjw2tHABhCiARIsANZzDWqU9BfCY90GXOfW3PyiW0JHFSGUi5rA2R-1iyC91kFd8QcKxJlnGMgaAmw6EALw_wcB"> Headspace </a> or <a href="https://insighttimer.com/"> Insight Timer </a>) that offer guided meditations specifically for stress relief and emotional balance. Even a short 10-minute session a day can help you become more centered and aware of your emotions. `, level: 3 },
           { type: 'bullet', content: 'Maintain Healthy Habits: Regular exercise, good nutrition, and adequate sleep are foundational for mental well-being.', level: 1 },
           { type: 'bullet', content: 'Use Affirmations: Remind yourself of your strengths, worth, and resilience.', level: 1 },
-          { type: 'bullet', content: 'Engage with positive LGBTQ+ narratives and role models.', level: 2 },
-          { type: 'bullet', content: 'Create your personal "Pride Statement," listing things you value about yourself and your identity.', level: 2 },
-          { type: 'bullet', content: 'Share affirmations or pride moments within supportive communities to reinforce these beliefs.', level: 2 },
+          { type: 'bullet', content: 'Engage with positive LGBTQ+ narratives and role models.', level: 3 },
+          { type: 'bullet', content: 'Create your personal "Pride Statement," listing things you value about yourself and your identity.', level: 3 },
+          { type: 'bullet', content: 'Share affirmations or pride moments within supportive communities to reinforce these beliefs.', level: 3 },
           "3.6 Reevaluate and Adapt",
           { type: 'paragraph', content: 'Coming out is not a one-time event but an ongoing process.' },
           { type: 'bullet', content: 'Check In with Yourself: Regularly reflect on your experiences, feelings, and progress. Adjust your approach if needed.', level: 1 },
@@ -136,9 +136,9 @@ export const challenges: Challenge[] = [
           "3.1 Reshape Your Self-Perception:",
           { type: 'bullet', content: 'Read Uplifting Stories: Find biographies and personal stories of successful LGBTQ+ individuals to inspire you and challenge negative beliefs.', level: 1 },
           { type: 'bullet', content: 'Keep a Daily Affirmation(Gratitude) Journal:', level: 1 },
-          { type: 'bullet', content: 'Daily Records: Write down your achievements and things that you feel good about and are happy about, no matter how small.', level: 2 },
-          { type: 'bullet', content: 'Highlight Daily Wins: Notice everyday victories—like overcoming a small challenge—and record them.', level: 2 },
-          { type: 'bullet', content: 'Review Regularly: Look back over your entries to see how far you\'ve come; this reflection can boost your self-esteem.', level: 2 },
+          { type: 'bullet', content: 'Daily Records: Write down your achievements and things that you feel good about and are happy about, no matter how small.', level: 3 },
+          { type: 'bullet', content: 'Highlight Daily Wins: Notice everyday victories—like overcoming a small challenge—and record them.', level: 3 },
+          { type: 'bullet', content: 'Review Regularly: Look back over your entries to see how far you\'ve come; this reflection can boost your self-esteem.', level: 3 },
           "3.2 Seek Professional Support:",
           { type: 'bullet', content: 'Find an LGBTQ+ Focused Therapist: Look for professionals who specialize in working with LGBTQ+ individuals to help guide you through your challenges.', level: 1 },
           { type: 'bullet', content: 'Attend Accessible Workshops: Instead of academic therapies, consider workshops or group sessions that focus on overcoming internalized stigma with practical exercises.', level: 1 },
@@ -202,41 +202,29 @@ export const challenges: Challenge[] = [
         heading: "3 Strategies and Methods",
         body: [
           "3.1 Join Support Groups",
-          { type: 'bullet', content: 'Find a Local LGBTQ+ Center or Club: Search for community centers or clubs in your area dedicated to LGBTQ+ youth. These spaces often host support groups, social events, and workshops. You can ask school counselors, community bulletin boards, or local LGBTQ+ organizations for recommendations.', level: 1 },
-         
+          { type: 'bullet', content: 'Find a Local LGBTQ+ Center or Club: Search for community centers or clubs in your area dedicated to LGBTQ+ youth. These spaces often host support groups, social events, and workshops. You can ask school counselors, community bulletin boards, or local LGBTQ+ organizations for recommendations.', level: 1 },         
           { type: 'bullet', content: 'Participate in Online Support Communities: If you don\'t have access to local groups, try joining moderated online forums or social media groups. Look for groups on platforms like Facebook or Reddit that focus on LGBTQ+ youth support. When joining, introduce yourself and share your experiences as you feel comfortable. Many members offer advice, share similar struggles, and provide a sense of belonging.', level: 1 },
-
-          { type: 'bullet', content: 'Consider Peer Mentoring Programs: Some organizations offer peer mentoring where someone who has been through similar experiences guides you through tough times. This one-on-one support can be very valuable, as it offers personalized advice and a trusted person who truly understands your situation.', level: 1 },
-    
+          { type: 'bullet', content: 'Consider Peer Mentoring Programs: Some organizations offer peer mentoring where someone who has been through similar experiences guides you through tough times. This one-on-one support can be very valuable, as it offers personalized advice and a trusted person who truly understands your situation.', level: 1 },    
           "3.2 Leverage Online and Offline Resources",
           { type: 'paragraph', content: 'Online Communities:', level: 1 },
-          { type: 'bullet', content: 'How to Get Started: Choose reputable platforms that focus on LGBTQ+ support. For example, moderated chat services or discussion boards offered by well-known organizations (like The Trevor Project) can be a great starting point.', level: 3 },
-   
-          { type: 'bullet', content: 'Tips for Engagement: When you join an online community, set aside some time each week to participate actively—comment on posts, share your thoughts, and ask questions. If you\'re new, read through posts to get a feel for the community\'s tone before contributing.', level: 3 },
-         
+          { type: 'bullet', content: 'How to Get Started: Choose reputable platforms that focus on LGBTQ+ support. For example, moderated chat services or discussion boards offered by well-known organizations (like The Trevor Project) can be a great starting point.', level: 3 },   
+          { type: 'bullet', content: 'Tips for Engagement: When you join an online community, set aside some time each week to participate actively—comment on posts, share your thoughts, and ask questions. If you\'re new, read through posts to get a feel for the community\'s tone before contributing.', level: 3 },         
           { type: 'paragraph', content: 'Virtual Counseling:', level: 1 },
-          { type: 'bullet', content: 'Finding a Provider: Look for online mental health services that specialize in LGBTQ+ issues. Many organizations now offer teletherapy, meaning you can have confidential sessions from your home.', level: 3 },
-      
+          { type: 'bullet', content: 'Finding a Provider: Look for online mental health services that specialize in LGBTQ+ issues. Many organizations now offer teletherapy, meaning you can have confidential sessions from your home.', level: 3 },      
           { type: 'bullet', content: 'How to Use Virtual Counseling: Once you find a service, schedule a session at a time when you can be comfortable and uninterrupted. Prepare a list of topics or concerns you\'d like to discuss. Virtual counseling can provide a safe space to explore your feelings with a professional who understands the unique challenges you face.', level: 3 },
   
           "3.3 Self-Care and Mindfulness",
           { type: 'paragraph', content: 'Mindfulness Practices:', level: 1 },
           { type: 'bullet', content: '🧠Deep Breathing Exercises: Try the <strong>4-7-8</strong> breathing technique, repeat this cycle 4–6 times. This practice helps calm your mind and reduces stress.', level: 3 },
-
           { type: 'bullet', content: 'Sit comfortably and close your eyes.', level: 5 },
           { type: 'bullet', content: 'Inhale slowly through your nose for <strong>4</strong> seconds.', level: 5 },
           { type: 'bullet', content: 'Hold your breath for <strong>7</strong> seconds.', level: 5 },
-          { type: 'bullet', content: 'Exhale slowly through your mouth for <strong>8</strong> seconds.', level: 5 },
-      
-          { type: 'bullet', content: '🧠Guided Meditation: Use free apps or online videos (like Headspace or Insight Timer) that offer guided meditations specifically for stress relief and emotional balance. Even a short 10-minute session a day can help you become more centered and aware of your emotions.', level: 3 },
-       
-          { type: 'bullet', content: '🧠Journaling: Spend a few minutes each day writing about your feelings. This could be a simple log of what made you feel lonely, what you\'re grateful for, or any positive interactions you experienced. Journaling can help you process emotions and see your progress over time.', level: 3 },
-       
+          { type: 'bullet', content: 'Exhale slowly through your mouth for <strong>8</strong> seconds.', level: 5 },      
+          { type: 'bullet', content: '🧠Guided Meditation: Use free apps or online videos (like Headspace or Insight Timer) that offer guided meditations specifically for stress relief and emotional balance. Even a short 10-minute session a day can help you become more centered and aware of your emotions.', level: 3 },      
+          { type: 'bullet', content: '🧠Journaling: Spend a few minutes each day writing about your feelings. This could be a simple log of what made you feel lonely, what you\'re grateful for, or any positive interactions you experienced. Journaling can help you process emotions and see your progress over time.', level: 3 },       
           { type: 'paragraph', content: 'Creative Outlets:', level: 1 },
-          { type: 'bullet', content: '🌟Art and Music: Expressing yourself through drawing, painting, or playing music can be a powerful way to work through difficult feelings. You don\'t need to be an expert—simply allowing your creativity to flow can provide emotional relief.', level: 3 },
-        
+          { type: 'bullet', content: '🌟Art and Music: Expressing yourself through drawing, painting, or playing music can be a powerful way to work through difficult feelings. You don\'t need to be an expert—simply allowing your creativity to flow can provide emotional relief.', level: 3 },        
           { type: 'bullet', content: '🌟Writing and Storytelling: Consider writing short stories, poems, or even personal essays about your experiences. Sharing your story in a safe space (like a supportive online forum) can not only help you feel less isolated but also inspire others facing similar challenges.', level: 3 },
-     
           { type: 'bullet', content: '🌟Hobbies That Connect: Engage in hobbies that interest you—whether it\'s photography, cooking, or gardening—and look for local or online groups where you can share your work and get feedback. This is a great way to build connections with people who have similar passions.', level: 3 },
           { type: 'paragraph', content: 'References:'},
           { type: 'paragraph', content: 'GLSEN. (2019). National School Climate Survey.'},
