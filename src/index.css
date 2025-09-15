@@ -139,3 +139,12 @@ img {
   transform: translateZ(0);
 }
 
+.article-content a {
+  color: #2563eb; /* 蓝色 */
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+.article-content a:hover {
+  color: #1d4ed8; /* 深蓝色 */
+}
