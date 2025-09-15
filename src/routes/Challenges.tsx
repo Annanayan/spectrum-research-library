@@ -22,16 +22,15 @@ function renderBodyItem(item: any, i: number) {
   // 2) 对象：按 type 渲染
   if (item && typeof item === 'object' && 'type' in item) {
     if (item.type === 'paragraph') {
-      return <p key={`p-${i}`} className="text-gray-700 leading-8">{item.content}</p>;
+      return <p key={`p-${i}`} className="text-gray-700 leading-8" dangerouslySetInnerHTML={{ __html: item.content }} />;
     }
     if (item.type === 'bullet') {
-      // 支持缩进级别：level = 1,2,3...
       const pad = item.level ? item.level * 16 : 16;
       return (
         <div key={`b-${i}`} style={{ paddingLeft: pad }}>
           <div className="flex gap-2">
             <span>•</span>
-            <span className="text-gray-700 leading-8">{item.content}</span>
+            <span className="text-gray-700 leading-8" dangerouslySetInnerHTML={{ __html: item.content }} />
           </div>
         </div>
       );
@@ -39,7 +38,7 @@ function renderBodyItem(item: any, i: number) {
     if (item.type === 'quote') {
       return (
         <blockquote key={`q-${i}`} className="border-l-4 border-gray-300 pl-4 italic text-gray-600">
-          <p>{item.content}</p>
+          <p dangerouslySetInnerHTML={{ __html: item.content }} />
           {item.cite ? <cite className="not-italic text-gray-500 block mt-2">— {item.cite}</cite> : null}
         </blockquote>
       );
