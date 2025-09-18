@@ -8,12 +8,12 @@ export default function Supports() {
       
       <section className="container-xxl pt-10 pb-16">
         {/* Main Title */}
-        <h1 className="font-display font-semibold mb-8" style={{ fontSize: '64px', lineHeight: '1.1' }}>
+        <h1 className="font-display font-semibold mb-8" style={{ fontSize: '48px', lineHeight: '1.1' }}>
           Support & Lifelines
         </h1>
 
         {/* Introduction Text */}
-        <p className="text-gray-600 mb-16" style={{ fontFamily: 'Roboto Serif, serif', fontSize: '20px', lineHeight: '1.8' }}>
+        <p className="text-gray-600 mb-16" style={{ fontFamily: 'Roboto Serif, serif', fontSize: '16px', lineHeight: '1.8' }}>
           This page brings together trusted support and resource links for the LGBTQ+ community, covering mental health, discrimination, healthcare, education, legal rights, and community networks. Our goal is to make it easier to find help, connect with supportive organizations, and feel less alone in facing challenges.
         </p>
 
@@ -35,8 +35,8 @@ export default function Supports() {
                           alt={section.title}
                           className="w-full rounded-2xl object-cover"
                           style={{ 
-                            minHeight: '650px', // Set minimum height
-                            maxHeight: '700px', // Set maximum height
+                            minHeight: '500px', // Set minimum height
+                            maxHeight: '600px', // Set maximum height
                             objectFit: 'cover'
                           }}
                         />
@@ -44,7 +44,7 @@ export default function Supports() {
                       <div className="space-y-6">
                         {/* Section Title - aligned with text on right */}
                         <h2 className="font-display font-bold" style={{ 
-                          fontSize: '48px', 
+                          fontSize: '38px', 
                           lineHeight: '1.1',
                           wordWrap: 'break-word'
                         }}>
@@ -52,18 +52,18 @@ export default function Supports() {
                         </h2>
                         
                         {/* Challenges Description */}
-                        <p className="text-gray-600" style={{ fontFamily: 'Roboto Serif, serif', fontSize: '20px', lineHeight: '1.6' }}>
+                        <p className="text-gray-600" style={{ fontFamily: 'Roboto Serif, serif', fontSize: '16px', lineHeight: '1.6' }}>
                           {section.challenges}
                         </p>
 
                         {/* Solutions */}
                         <div>
-                          <h3 className="font-bold mb-4" style={{ fontFamily: 'Roboto Serif, serif', fontSize: '24px' }}>
+                          <h3 className="font-bold mb-4" style={{ fontFamily: 'Roboto Serif, serif', fontSize: '18px' }}>
                             {section.solutions.title}
                           </h3>
                           <ul className="space-y-2">
                             {section.solutions.items.map((item, itemIdx) => (
-                              <li key={itemIdx} className="flex" style={{ fontFamily: 'Roboto Serif, serif', fontSize: '20px' }}>
+                              <li key={itemIdx} className="flex" style={{ fontFamily: 'Roboto Serif, serif', fontSize: '16px' }}>
                                 <span className="mr-2 mt-1">•</span>
                                 <span>{item}</span>
                               </li>
@@ -73,12 +73,12 @@ export default function Supports() {
 
                         {/* Support Resources */}
                         <div>
-                          <h3 className="font-bold mb-4" style={{ fontFamily: 'Roboto Serif, serif', fontSize: '24px' }}>
+                          <h3 className="font-bold mb-4" style={{ fontFamily: 'Roboto Serif, serif', fontSize: '18px' }}>
                             {section.supportResources.title}
                           </h3>
                           <ul className="space-y-2">
                             {section.supportResources.items.map((item, itemIdx) => (
-                              <li key={itemIdx} className="flex" style={{ fontFamily: 'Roboto Serif, serif', fontSize: '20px' }}>
+                              <li key={itemIdx} className="flex" style={{ fontFamily: 'Roboto Serif, serif', fontSize: '16px' }}>
                                 <span className="mr-2 mt-1">•</span>
                                 <span>
                                   {item.link ? (
@@ -110,7 +110,7 @@ export default function Supports() {
                       <div className="space-y-6">
                         {/* Section Title - aligned with text on left */}
                         <h2 className="font-display font-bold" style={{ 
-                          fontSize: '48px', 
+                          fontSize: '38px', 
                           lineHeight: '1.1',
                           wordWrap: 'break-word'
                         }}>
@@ -118,18 +118,18 @@ export default function Supports() {
                         </h2>
                         
                         {/* Challenges Description */}
-                        <p className="text-gray-600" style={{ fontFamily: 'Roboto Serif, serif', fontSize: '20px', lineHeight: '1.6' }}>
+                        <p className="text-gray-600" style={{ fontFamily: 'Roboto Serif, serif', fontSize: '16px', lineHeight: '1.6' }}>
                           {section.challenges}
                         </p>
 
                         {/* Solutions */}
                         <div>
-                          <h3 className="font-bold mb-4" style={{ fontFamily: 'Roboto Serif, serif', fontSize: '24px' }}>
+                          <h3 className="font-bold mb-4" style={{ fontFamily: 'Roboto Serif, serif', fontSize: '18px' }}>
                             {section.solutions.title}
                           </h3>
                           <ul className="space-y-2">
                             {section.solutions.items.map((item, itemIdx) => (
-                              <li key={itemIdx} className="flex" style={{ fontFamily: 'Roboto Serif, serif', fontSize: '20px' }}>
+                              <li key={itemIdx} className="flex" style={{ fontFamily: 'Roboto Serif, serif', fontSize: '16px' }}>
                                 <span className="mr-2 mt-1">•</span>
                                 <span>{item}</span>
                               </li>
@@ -139,12 +139,12 @@ export default function Supports() {
 
                         {/* Support Resources */}
                         <div>
-                          <h3 className="font-bold mb-4" style={{ fontFamily: 'Roboto Serif, serif', fontSize: '24px' }}>
+                          <h3 className="font-bold mb-4" style={{ fontFamily: 'Roboto Serif, serif', fontSize: '18px' }}>
                             {section.supportResources.title}
                           </h3>
                           <ul className="space-y-2">
                             {section.supportResources.items.map((item, itemIdx) => (
-                              <li key={itemIdx} className="flex" style={{ fontFamily: 'Roboto Serif, serif', fontSize: '20px' }}>
+                              <li key={itemIdx} className="flex" style={{ fontFamily: 'Roboto Serif, serif', fontSize: '16px' }}>
                                 <span className="mr-2 mt-1">•</span>
                                 <span>
                                   {item.link ? (
@@ -175,8 +175,8 @@ export default function Supports() {
                           alt={section.title}
                           className="w-full rounded-2xl object-cover"
                           style={{ 
-                            minHeight: '650px', // Set minimum height
-                            maxHeight: '700px', // Set maximum height
+                            minHeight: '500px', // Set minimum height
+                            maxHeight: '600px', // Set maximum height
                             objectFit: 'cover'
                           }}
                         />
