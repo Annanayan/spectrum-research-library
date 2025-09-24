@@ -1,5 +1,6 @@
 import { Route, Routes, Navigate } from 'react-router-dom'
 import Layout from '@/shared/Layout'
+import ScrollToTop from '@/components/shared/ScrollToTop'
 import Landing from '@/routes/Landing'
 import Challenges from '@/routes/Challenges'
 import Supports from '@/routes/Supports'
@@ -9,6 +10,7 @@ import NotFound from '@/routes/NotFound'
 export default function App() {
   return (
     <Layout>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/challenges" element={<Navigate to="/challenges/coming-out-anxiety" replace />} />
