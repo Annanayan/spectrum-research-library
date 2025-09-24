@@ -117,7 +117,7 @@ export const supportSections: SupportSection[] = [
   {
     id: "lgbtq-youth-education",
     title: "LGBTQ+ Youth and Education",
-    image: "/assets/LGBTQ+ Youth and Education.png",
+    image: "/assets/LGBTQ Youth and Education.png",
     challenges: "Challenges: School Bullying, Lack of LGBTQ+ Inclusive Curriculum, Homelessness Among LGBTQ+ Youth",
     solutions: {
       title: "Solutions:",
