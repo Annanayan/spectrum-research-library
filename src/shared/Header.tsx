@@ -34,7 +34,7 @@ export default function Header() {
                   : 'text-sr-text-secondary hover:text-sr-text-primary transition-colors'
               }
             >
-              Challenge
+              Challenges
             </NavLink>
             <NavLink
               to="/supports"
@@ -44,7 +44,7 @@ export default function Header() {
                   : 'text-sr-text-secondary hover:text-sr-text-primary transition-colors'
               }
             >
-              Supports
+              Support
             </NavLink>
             <NavLink
               to="/books"

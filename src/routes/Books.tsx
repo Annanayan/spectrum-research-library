@@ -18,14 +18,14 @@ export default function Books() {
       exit={{ opacity: 0 }}
       transition={{ duration: 0.25 }}
     >
-      {/* Hero Section */}
-      <Section background="base" padding="large">
+      {/* Hero Section with Featured Reading */}
+      <Section background="soft" padding="large">
         <Container>
           <motion.div
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="text-center"
+            className="text-center mb-12"
           >
             <h1 className="h1 text-sr-text-primary mb-6">
               Books & Journals
@@ -34,17 +34,7 @@ export default function Books() {
               Discover essential reading materials covering LGBTQ+ experiences, research, and community stories.
             </p>
           </motion.div>
-        </Container>
-      </Section>
 
-      {/* Horizontal Scroller - Featured Books */}
-      <Section background="soft" padding="normal">
-        <Container>
-          <SectionHeader
-            title="Featured Reading"
-            description="A curated selection of impactful books and memoirs"
-            className="mb-8"
-          />
           <HorizontalScroller books={featuredBooks} category="Featured" />
         </Container>
       </Section>

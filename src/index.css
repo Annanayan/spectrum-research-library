@@ -19,10 +19,10 @@ body { @apply font-body text-sr-text-primary bg-sr-bg-base; }
 .text-secondary { @apply text-sr-text-secondary; }
 
 /* Typography hierarchy */
-.h1 { @apply text-5xl leading-tight font-extrabold; }
-.h2 { @apply text-3xl leading-10 font-bold; }
-.h3 { @apply text-2xl leading-8 font-semibold; }
-.body { @apply text-lg leading-7; }
+.h1 { @apply text-4xl leading-tight font-extrabold; }
+.h2 { @apply text-2xl leading-9 font-bold; }
+.h3 { @apply text-xl leading-7 font-semibold; }
+.body { @apply text-base leading-6; }
 .meta { @apply text-sm leading-6; }
 
 /* Category pill */

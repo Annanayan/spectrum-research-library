@@ -13,34 +13,29 @@ export default function Landing() {
       transition={{ duration: 0.25 }}
     >
       {/* Hero Section */}
-      <Section background="base" padding="large">
+      <Section background="soft" padding="large">
         <Container>
           <motion.div
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="max-w-4xl"
+            className="max-w-3xl mb-10"
           >
-            <h1 className="h1 text-sr-text-primary mb-6">
+            <h1 className="h1 text-sr-text-primary mb-5">
               Spectrum Research Library
             </h1>
-            <p className="body text-sr-text-secondary max-w-3xl">
+            <p className="body text-sr-text-secondary max-w-2xl">
               A digital hub dedicated to LGBTQ+ studies and support. We bring together research-based insights,
               curated support resources, and recommended literature to foster understanding, resilience,
               and well-being within diverse communities.
             </p>
           </motion.div>
-        </Container>
-      </Section>
 
-      {/* Hero Image Section */}
-      <Section background="soft" padding="normal">
-        <Container>
           <motion.div
             initial={{ opacity: 0, y: 24 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, ease: 'easeOut' }}
-            viewport={{ once: true, amount: 0.3 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2, ease: 'easeOut' }}
+            className="max-w-4xl"
           >
             <OptimizedImage
               src="/assets/Home Hero.png"
@@ -84,15 +79,15 @@ export default function Landing() {
               <OptimizedImage
                 src="/assets/Identity and Self-Acceptance Challenges.png"
                 alt="Identity and Self-Acceptance Challenges"
-                className="w-full rounded-card object-cover mb-6"
+                className="w-full rounded-card object-cover mb-5"
                 style={{ aspectRatio: '16 / 10' }}
                 priority={true}
                 placeholder="skeleton"
               />
-              <h3 className="h3 text-sr-text-primary mb-3">
+              <h3 className="h3 text-sr-text-primary mb-2">
                 Identity and Self-Acceptance Challenges
               </h3>
-              <p className="body text-sr-text-secondary mb-6">
+              <p className="body text-sr-text-secondary mb-5">
                 Struggling with negative messages about one's identity that have been absorbed from society.
               </p>
               <motion.div whileHover={{ scale: 1.05 }} transition={{ duration: 0.15 }}>
@@ -110,12 +105,12 @@ export default function Landing() {
               <OptimizedImage
                 src="/assets/Social Isolation and Community Disconnection.png"
                 alt="Social Isolation and Community Disconnection"
-                className="w-full rounded-card object-cover mb-6"
+                className="w-full rounded-card object-cover mb-5"
                 style={{ aspectRatio: '16 / 10' }}
                 priority={true}
                 placeholder="skeleton"
               />
-              <h3 className="h3 text-sr-text-primary mb-3">
+              <h3 className="h3 text-sr-text-primary mb-2">
                 Social Isolation and Community Disconnection
               </h3>
               <p className="body text-sr-text-secondary">
@@ -143,30 +138,30 @@ export default function Landing() {
               transition={{ duration: 0.6, delay: 0.1, ease: 'easeOut' }}
               viewport={{ once: true, amount: 0.3 }}
             >
-              <h2 className="h2 text-sr-text-primary mb-8">Support & Lifelines</h2>
-              <div className="space-y-8">
+              <h2 className="h2 text-sr-text-primary mb-6">Support & Lifelines</h2>
+              <div className="space-y-6">
                 <div>
-                  <h3 className="h3 text-sr-text-primary mb-3">Mental Health Issues</h3>
+                  <h3 className="h3 text-sr-text-primary mb-2">Mental Health Issues</h3>
                   <p className="body text-sr-text-secondary">
                     Depression, Anxiety Disorders, Suicidal Ideation & Self-Harm, Substance Abuse,
                     Low Self-Esteem and Internalized Homophobia
                   </p>
                 </div>
                 <div>
-                  <h3 className="h3 text-sr-text-primary mb-3">Healthcare and Medical Support</h3>
+                  <h3 className="h3 text-sr-text-primary mb-2">Healthcare and Medical Support</h3>
                   <p className="body text-sr-text-secondary">
                     Lack of LGBTQ+ inclusive healthcare, Gender-affirming healthcare access,
                     Mental health support gaps
                   </p>
                 </div>
                 <div>
-                  <h3 className="h3 text-sr-text-primary mb-3">Legal and Policy Support</h3>
+                  <h3 className="h3 text-sr-text-primary mb-2">Legal and Policy Support</h3>
                   <p className="body text-sr-text-secondary">
                     Marriage, Medical Authorization Rights, Anti-LGBTQ+ Laws and Policies, Refugee Issues
                   </p>
                 </div>
               </div>
-              <div className="mt-8">
+              <div className="mt-6">
                 <motion.div whileHover={{ scale: 1.05 }} transition={{ duration: 0.15 }}>
                   <BlackButton to="/supports">View All Resources</BlackButton>
                 </motion.div>
@@ -181,7 +176,7 @@ export default function Landing() {
               <OptimizedImage
                 src="/assets/Support & Lifelines.png"
                 alt="Support & Lifelines"
-                className="w-full h-96 object-cover rounded-card"
+                className="w-full h-80 object-cover rounded-card"
                 priority={true}
                 placeholder="skeleton"
               />
@@ -220,10 +215,10 @@ export default function Landing() {
               <img
                 src="/assets/Boy Erased.png"
                 alt="Boy Erased"
-                className="w-full rounded-card object-cover mb-4"
+                className="w-full rounded-card object-cover mb-3"
                 style={{ aspectRatio: '1 / 1' }}
               />
-              <h3 className="h3 text-sr-text-primary mb-3">Boy Erased</h3>
+              <h3 className="h3 text-sr-text-primary mb-2">Boy Erased</h3>
               <p className="body text-sr-text-secondary">
                 A powerful memoir about growing up in a strict Christian family and undergoing conversion therapy.
               </p>
@@ -239,10 +234,10 @@ export default function Landing() {
               <img
                 src="/assets/We Are Everywhere.png"
                 alt="We Are Everywhere"
-                className="w-full rounded-card object-cover mb-4"
+                className="w-full rounded-card object-cover mb-3"
                 style={{ aspectRatio: '1 / 1' }}
               />
-              <h3 className="h3 text-sr-text-primary mb-3">We Are Everywhere</h3>
+              <h3 className="h3 text-sr-text-primary mb-2">We Are Everywhere</h3>
               <p className="body text-sr-text-secondary">
                 A blend of photographs and history, showcasing the LGBTQ+ community's struggles and victories.
               </p>
@@ -258,10 +253,10 @@ export default function Landing() {
               <img
                 src="/assets/Me.png"
                 alt="Me"
-                className="w-full rounded-card object-cover mb-4"
+                className="w-full rounded-card object-cover mb-3"
                 style={{ aspectRatio: '1 / 1' }}
               />
-              <h3 className="h3 text-sr-text-primary mb-3">Me</h3>
+              <h3 className="h3 text-sr-text-primary mb-2">Me</h3>
               <p className="body text-sr-text-secondary">
                 A candid memoir by the legendary British musician, covering his music career, struggles with addiction,
                 and LGBTQ+ identity.

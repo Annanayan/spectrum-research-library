@@ -11,6 +11,18 @@ export default function SupportCard({ section, index }: SupportCardProps) {
   const challengesText = section.challenges.replace('Challenges:', '').trim();
   const challengeTags = challengesText.split(',').map(tag => tag.trim());
 
+  // Define low-saturation color schemes for tags
+  const tagColors = [
+    'bg-purple-100 text-black',
+    'bg-blue-100 text-black',
+    'bg-green-100 text-black',
+    'bg-yellow-100 text-black',
+    'bg-pink-100 text-black',
+    'bg-indigo-100 text-black',
+    'bg-teal-100 text-black',
+    'bg-orange-100 text-black',
+  ];
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 24 }}
@@ -44,7 +56,7 @@ export default function SupportCard({ section, index }: SupportCardProps) {
           {challengeTags.map((tag, tagIndex) => (
             <span
               key={tagIndex}
-              className="inline-block px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full"
+              className={`inline-block px-3 py-1 text-sm rounded ${tagColors[tagIndex % tagColors.length]}`}
             >
               {tag}
             </span>
